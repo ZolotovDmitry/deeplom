@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+/*.header_top,*/
+/*.header_bottom,*/
+/*#horizontal_menu,*/
+/*#white_spase_left,*/
+/*main,*/
+/*#white_spase_right,*/
+/*footer {*/
+/*background: blueviolet;*/
+/*border: 1px solid black;*/
+/*}*/
+body {
+    display: grid;
+    grid-template-areas:
+            "header-top header-top header-top"
+            "header-bottom header-bottom header-bottom"
+            "horizontal-menu horizontal-menu horizontal-menu"
+            "white-spase-left main white-spase-right"
+            "white-spase-left slider white-spase-right"
+            "footer footer footer";
+    grid-template-rows: 50px 50px 50px 50px 1fr 50px;
+    grid-template-columns: 1fr minmax(auto/*500px*/, 1200px) 1fr;
+    height: 100vh;
+    gap: 10px;
+    background: top / cover no-repeat url("../img/11.png");
+}
+.header_top {
+    grid-area: header-top;
+}
+header {
+    grid-area: header-bottom;
+}
+#horizontal_menu {
+    grid-area: horizontal-menu;
+}
+#white_spase_left {
+    grid-area: white-spase-left;
+}
+main {
+    grid-area: main;
+}
+#white_spase_right {
+    grid-area: white-spase-right;
+}
+#slider {
+    grid-area: slider;
+}
+footer {
+    grid-area: footer;
+}
+a {
+color: whitesmoke;
+}
+a:hover {
+color: whitesmoke;
+text-decoration: underline;
+}
+a:active {
+color: whitesmoke;
+text-decoration: underline;
+}
+a:visited {
+color: whitesmoke;
+text-decoration: underline;
+}
+#slider {
+    display: none;
+}
+.header_top li {
+    display: inline-block;
+}
+header li {
+    display: inline-block;
+}
+#horizontal_menu li {
+    display: inline-block;
+}
+/*какой элемент сдеть flex, что бы применить justify content spase between*/
+/*header_contacts {*/
+    /*!*float: left;*!*/
+    /*!*clear: both;*!*/
+/*}*/
+.header_messenger {
+    float: right;
+    /*clear: both;*/
+    text-align: center;
+}
+.header_profile {
+    float: right;
+    /*clear: both;*/
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
