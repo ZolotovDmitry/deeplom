@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAWALOVER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+<div class="header_top">
+<ul class="header_contacts">
+    <li><a class="header_mail" href="mailto:dizo@list.ru">mail@example.com</a></li>
+    <li><a class="header_phone" href="tel:mail@example.com">8 - 800 - 555 - 35 - 35</a></li>
+</ul>
+<ul class="header_social">
+    <li><a class="header_social_link header_social_link_fb" href="#"><img src="img/fb.png" width="25px"></a></li>
+    <li><a class="header_social_link header_social_link_tw" href="#"><img src="img/tw.png" width="25px"></a></li>
+    <li><a class="header_social_link header_social_link_google" href="#"><img src="img/g.png" width="25px"></a></li>
+    <li><a class="header_social_link header_social_link_instagram" href="#"><img src="img/i.png" width="25px"></a></li>
+</ul>
+</div>
+<header class="header_bottom">
+    <div class="container">
+        <a class="header_logo" href="index.html"><img src="img/logo.png" width="60px"></a>
+        <nav class="header_nav">
+            <ul class="header_nav_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    <ul class="header_profile">
+        <li><a class="basket" href="#"><img src="img/basket.png" width="25px"></a></li>
+        <li><a class="profile" href="#"><img src="img/profile.png" width="25px"></a></li>
+    </ul>
+    </div>
+
+</header>
+    <div class="slider">
+        <div class="item">
+            <img src="img/1.jpg">
+            <div class="slideText">First slide info</div>
+        </div>
+
+        <div class="item">
+            <img src="img/2.jpg">
+            <div class="slideText">Second slide info</div>
+        </div>
+
+        <div class="item">
+            <img src="img/3.jpg">
+            <div class="slideText">Third slide info</div>
+        </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+    <br>
+
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <section class="new_arrivals">
+        <div class="container ">
+            <div class="section_title">New Arrivals</div>
+            <div class="product_item_wrap clearfix">
+                <div class="product_item">
+                    <div class="product_item_first">
+
+                        <img class="product_item_pic" src="img/p1.jpg">
+                        <span class="product_item_title">Jeans</span>
+                        <span class="product_item_Price">50$</span>
+                    </div>
+                    <div class="product_item_second">
+                        <ul class="product_item_slider">
+<!--                            <li><a href="good.html"><img src="img/p1.jpg"></a></li>-->
+                            <li><img src="img/p1.jpg"></li>
+                            <li><img src="img/p1.jpg"></li>
+                            <li><img src="img/p1.jpg"></li>
+                            <li><img src="img/p1.jpg"></li>
+                        </ul>
+                        <span class="product_item_title">Jeans</span>
+                        <div class="product_item_sizes">
+                                <span> sizes:
+                                        <ul class="sizes-list">
+                                        <li><span>S</span></li>
+                                        <li><span>M</span></li>
+                                        <li><span>L</span></li>
+                                        <li><span>XL</span></li>
+                                  </ul>
+                               </span>
+                        </div>
+                        <div class="product_item_colors">
+                            <a href="#" data-slide-index="0" class="product_color_pink"></a>
+                            <a href="#" data-slide-index="1" class="product_color_blue"></a>
+                            <a href="#" data-slide-index="2" class="product_color_indigo"></a>
+                            <a href="#" data-slide-index="3" class="product_color_green"></a>
+                        </div>
+                        <div class="product_item_buttons">
+                            <a class="product_item_web" href="javascript:void(0);"><img src="img/web.png" width="25px"></a>
+                            <a class="product_item_buy" href="javascript:void(0);"><img src="img/basket.png" width="25px"></a>
+                            <a class="product_item_favorite" href="javascript:void(0);"><img src="img/fav.png" width="25px"></a>
+                        </div>
+                    </div>
+                </div>
+            <div class="product_item">
+                <div class="product_item_first">
+                    <img class="product_item_pic" src="img/p2.jpg">
+                    <span class="product_item_title">Boots</span>
+                    <span class="product_item_Price">100$</span>
+                </div>
+                <div class="product_item_second">
+                    <ul class="product_item_slider">
+                        <li><img src="img/p2.jpg"></li>
+                        <li><img src="img/p2.jpg"></li>
+                        <li><img src="img/p2.jpg"></li>
+                        <li><img src="img/p2.jpg"></li>
+                    </ul>
+                    <span class="product_item_title">Boots</span>
+                    <div class="product_item_sizes">
+                                <span> sizes:
+                                        <ul class="sizes-list">
+                                        <li><span>9</span></li>
+                                        <li><span>10</span></li>
+                                        <li><span>11</span></li>
+                                        <li><span>12</span></li>
+                                  </ul>
+                               </span>
+                    </div>
+                    <div class="product_item_colors">
+                        <a href="#" data-slide-index="0" class="product_color_pink"></a>
+                        <a href="#" data-slide-index="1" class="product_color_blue"></a>
+                        <a href="#" data-slide-index="2" class="product_color_indigo"></a>
+                        <a href="#" data-slide-index="3" class="product_color_green"></a>
+                    </div>
+                    <div class="product_item_buttons">
+                        <a class="product_item_web" href="javascript:void(0);"><img src="img/web.png" width="25px"></a>
+                        <a class="product_item_buy" href="javascript:void(0);"><img src="img/basket.png" width="25px"></a>
+                        <a class="product_item_favorite" href="javascript:void(0);"><img src="img/fav.png" width="25px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product_item">
+                <div class="product_item_first">
+                    <img class="product_item_pic" src="img/p3.jpg">
+                  <span class="product_item_title">T-Shirt</span>
+                    <span class="product_item_Price">20$</span>
+                </div>
+                <div class="product_item_second">
+                    <ul class="product_item_slider">
+                        <li><img src="img/p3.jpg"></li>
+                        <li><img src="img/p3.jpg"></li>
+                        <li><img src="img/p3.jpg"></li>
+                        <li><img src="img/p3.jpg"></li>
+                    </ul>
+                    <span class="product_item_title">T-Shirt</span>
+                    <div class="product_item_sizes">
+                        <span> sizes:
+                            <ul class="sizes-list">
+                                <li><span>S</span></li>
+                                <li><span>M</span></li>
+                                <li><span>L</span></li>
+                                <li><span>XL</span></li>
+                            </ul>
+                        </span>
+                </div>
+                <div class="product_item_colors">
+                    <a href="#" data-slide-index="0" class="product_color_pink"></a>
+                    <a href="#" data-slide-index="1" class="product_color_blue"></a>
+                    <a href="#" data-slide-index="2" class="product_color_indigo"></a>
+                    <a href="#" data-slide-index="3" class="product_color_green"></a>
+                </div>
+                <div class="product_item_buttons">
+                    <a class="product_item_web" href="javascript:void(0);"><img src="img/web.png" width="25px"></a>
+                    <a class="product_item_buy" href="javascript:void(0);"><img src="img/basket.png" width="25px"></a>
+                    <a class="product_item_favorite" href="javascript:void(0);"><img src="img/fav.png" width="25px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="product_item">
+            <div class="product_item_first">
+                <img class="product_item_pic" src="img/p4.jpg">
+                <span class="product_item_title">Suit</span>
+                <span class="product_item_Price ">200$</span>
+            </div>
+            <div class="product_item_second">
+                <ul class="product_item_slider">
+                    <li><img src="img/p4.jpg"></li>
+                    <li><img src="img/p4.jpg"></li>
+                    <li><img src="img/p4.jpg"></li>
+                    <li><img src="img/p4.jpg"></li>
+                </ul>
+                <span class="product_item_title">Suit</span>
+                <div class="product_item_sizes">
+                                <span> sizes:
+                                        <ul class="sizes-list">
+                                        <li><span>S</span></li>
+                                        <li><span>M</span></li>
+                                        <li><span>L</span></li>
+                                        <li><span>XL</span></li>
+                                  </ul>
+                               </span>
+                </div>
+                <div class="product_item_colors">
+                    <a href="#" data-slide-index="0" class="product_color_pink"></a>
+                    <a href="#" data-slide-index="1" class="product_color_blue"></a>
+                    <a href="#" data-slide-index="2" class="product_color_indigo"></a>
+                    <a href="#" data-slide-index="3" class="product_color_green"></a>
+                </div>
+                <div class="product_item_buttons">
+                    <a class="product_item_web" href="javascript:void(0);"><img src="img/web.png" width="25px"></a>
+                    <a class="product_item_buy" href="javascript:void(0);"><img src="img/basket.png" width="25px"></a>
+                    <a class="product_item_favorite" href="javascript:void(0);"><img src="img/fav.png" width="25px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <a href="#" class=product_item_load_more>...</a>
+    </div>
+    </section>
+    <a href="#" class="banner"><img src="img/2d.png" alt="Get Discount" title="Get Discount"></a>
+
+    <section class="best_sales">
+        <div class="container clearfix">
+        <div class="container">
+            <div class="section_title">Best Sales</div>
+            <div class="best_sales_item">
+                <img src="img/best.jpg" class="best_sales_img">
+                <div class="best_sales_info">
+                    <span class="best_sales_title">The boots</span>
+                    <div class="best_sales_rating">
+                        <img src="img/stars.png">
+                        <span class="best_sales_price"> 99.99$</span>
+                    </div>
+                    <a class="best_sales_buy" href="#">add to cart</a>
+                </div>
+                <div class="best_sales_info"></div>
+            </div>
+            <div class="best_sales_item">
+                <img src="img/best.jpg" class="best_sales_img">
+                <div class="best_sales_info">
+                    <span class="best_sales_title">The boots</span>
+                    <div class="best_sales_rating">
+                        <img src="img/stars.png">
+                        <span class="best_sales_price"> 99.99$</span>
+                    </div>
+                    <a class="best_sales_buy" href="#">add to cart</a>
+                </div>
+                <div class="best_sales_info"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+<!--    <section>-->
+<!--    subscribe-->
+<!--    </section>-->
+<!--    -->
+    <footer class="footer">
+        <span class="footer_copyright">Copyright © JAWALOVER 2019</span>
+<!--        <div class="footer_logo"><img src="img/logo.png">-->
+<!--            <span class="footer_copyright">Copyright © JAWALOVER 2019</span>-->
+<!--        </div>-->
+<!--    <nav class="footer_nav">-->
+<!--        <ul class="footer_nav_list">-->
+<!--            <li><a href="#"> about us</a></li>-->
+<!--            <li><a href="#"> contact us</a></li>-->
+<!--            <li><a href="#"> support</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
